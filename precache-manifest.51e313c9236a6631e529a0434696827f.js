@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/React_Test/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "c1fc6499b315d8aa1e6b",
-    "url": "/React_Test/static/css/main.d341c410.chunk.css"
+    "revision": "dd2e79520f17ce95d46a",
+    "url": "/React_Test/static/css/main.5a69d609.chunk.css"
   },
   {
     "revision": "a1a749e89f578a49306ec2b055c073da",
@@ -28,10 +28,6 @@ self.__precacheManifest = [
     "url": "/React_Test/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "9c74e172f87984c48ddf5c8108cabe67",
-    "url": "/React_Test/static/media/flags.9c74e172.png"
-  },
-  {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/React_Test/static/media/outline-icons.701ae6ab.eot"
   },
@@ -40,12 +36,16 @@ self.__precacheManifest = [
     "url": "/React_Test/static/media/outline-icons.ad97afd3.ttf"
   },
   {
+    "revision": "9c74e172f87984c48ddf5c8108cabe67",
+    "url": "/React_Test/static/media/flags.9c74e172.png"
+  },
+  {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/React_Test/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "c1fc6499b315d8aa1e6b",
-    "url": "/React_Test/static/js/main.c1fc6499.chunk.js"
+    "revision": "dd2e79520f17ce95d46a",
+    "url": "/React_Test/static/js/main.dd2e7952.chunk.js"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/React_Test/static/css/1.677a1819.chunk.css"
   },
   {
-    "revision": "a7a2a807154925fdab610c121bcade73",
+    "revision": "6e5d8596be699d4bc8c1432730e53faf",
     "url": "/React_Test/index.html"
   }
 ];
