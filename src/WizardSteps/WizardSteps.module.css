@@ -1,0 +1,48 @@
+
+.accordionWrapper {
+    display:flex;
+    justify-content: space-evenly;
+
+}
+.DiscoverySourceWrapper{
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    color:white;
+   
+}
+
+.DiscoveryOption{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    color:white;
+}
+
+.stepsWrapper {
+    display:flex;
+    /* background: #000000; */
+}
+.accordionDiscoverySource {
+width:60%;
+}
+.buttonsWrapper {
+margin:2rem;
+padding:1rem;
+}
+/* .stepGroupWrapper {
+    background-color: #000000;
+} */
+.stepWrapper{
+    background: black;
+    /* padding: 0; */
+}
+
+.stepTitle{
+    color: 'black';
+
+}
+.ui.steps .step {
+    background: 'black';
+   }
+

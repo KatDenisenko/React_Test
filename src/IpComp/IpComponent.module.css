@@ -1,0 +1,11 @@
+.ipWrapper{
+    padding: 2rem 0;
+}
+
+.ipValid {
+    color: green;
+}
+
+.ipNotValid {
+    color:red;
+}

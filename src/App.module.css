@@ -1,0 +1,11 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.AppWrapper {
+    width:75vw;
+    margin:auto;
+    /* background-color: black;
+    color:white; */
+}

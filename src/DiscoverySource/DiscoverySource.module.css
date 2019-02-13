@@ -1,0 +1,18 @@
+.emptyDiv {
+    padding: 3.5rem 0;
+}
+
+.DiscoverySourceWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border:1px solid #575454;
+    border-radius: 3%;
+    /* width:50%; */
+    /* background-color: black; */
+}
+
+/* .Csv{
+    display: flex;
+    flex-direction: column; 
+} */
