@@ -109,7 +109,7 @@ class Authentication extends Component {
                     onChange={this.handleChange}/>
                 </Form.Field>
         
-                <Header as='h3' textAlign='left'>Authentication algoritm</Header>
+                <Header as='h3' color = 'blue' textAlign='left'>Authentication algoritm</Header>
         
                 <Form.Group inline widths='equal' className={style.borderWrapper}>
                         <Form.Field>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Accordion, Step, Button, Icon, Segment} from 'semantic-ui-react';
+import {Accordion, Step, Button, Icon, Segment,Header} from 'semantic-ui-react';
 
 import style from './WizardSteps.module.css'
 import SelectedOptions from '../SelectedOptions/SelectedOptions';
@@ -87,7 +87,7 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
             ipEndValid:'',
             path:'',
             clear:!prev.clear,
-            showSelectedOptions:false,
+            // showSelectedOptions:false,
             // sourceCompleted:false,
         }))
         //remove store here
@@ -233,15 +233,21 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
       return (  
     <Segment inverted className={style.mainSegmentWrapper}>
     <Accordion  inverted fluid  className={style.AccordionWrapper}>
-      <Step.Group className = {style.stepGroupWrapper} widths={2} ordered> 
+      <Step.Group className = {style.stepGroupWrapper} widths={2} size='tiny'> 
         <Step background='grey'className = {style.stepWrapper} active={activeIndex === 0} completed={this.props.content.inputType}>
           <Step.Content>
-              <Step.Title  className={style.stepTitle}>Discovery source</Step.Title>
+              <Step.Title >
+              <Header color='green' as='h3'>Discovery source</Header>
+              <p className={style.stepOrderWrapper}>1</p>
+              </Step.Title>
           </Step.Content>
               </Step>
               <Step className = {style.stepWrapper} active={activeIndex === 1} completed={this.props.snmpConfig.version}>
               <Step.Content >
-          <Step.Title className={style.stepTitle} >Discovery options</Step.Title>
+          <Step.Title>
+          <Header color='green' as='h3'>Discovery options</Header>
+          <p className={style.stepOrderWrapper}>2</p>
+          </Step.Title>
         </Step.Content>
       </Step>
       </Step.Group>

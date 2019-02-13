@@ -59,7 +59,7 @@ class SelectedOptions extends Component {
             </Accordion.Title>
             <Accordion.Content active={activeIndex === 0}>
               <Segment inverted>
-                  <Header as='h3' textAlign='left'>SNMP version</Header>
+                  <Header as='h3' color='blue' textAlign='left'>SNMP version</Header>
                     <Form inverted>
                       <Form.Group inline widths='equal'>
                           <Form.Field>

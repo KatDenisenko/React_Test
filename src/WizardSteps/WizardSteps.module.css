@@ -45,4 +45,9 @@ padding:1rem;
 .ui.steps .step {
     background: 'black';
    }
-
+.stepOrderWrapper {
+    text-align: center;
+    color:green;
+    font-weight: bold;
+    font-size: 1rem;
+}
