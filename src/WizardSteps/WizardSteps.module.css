@@ -30,24 +30,13 @@ width:60%;
 margin:2rem;
 padding:1rem;
 }
-/* .stepGroupWrapper {
-    background-color: #000000;
-} */
+
 .stepWrapper{
     background: black;
     /* padding: 0; */
 }
 
-.stepTitle{
-    color: 'black';
 
-}
 .ui.steps .step {
     background: 'black';
    }
-.stepOrderWrapper {
-    text-align: center;
-    color:green;
-    font-weight: bold;
-    font-size: 1rem;
-}

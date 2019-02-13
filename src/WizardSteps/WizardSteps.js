@@ -130,8 +130,8 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
               else if (key==='ipStart') {
                 let copy = ipValid;
                 let arr = copy.split('.');
-                let poped = arr.pop();
-                let string = arr.join('.');
+                 arr.pop();
+                 let string = arr.join('.');
               //  console.log(string);
                
                 this.setState({
@@ -142,13 +142,11 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
                   ipValid:'',
                   path:''
                 })
-                // data.ipStartValid=ipValid;
-                console.log(data);
+
                 if(data.ipStartValid && data.ipEndValid){
                   this.recordConnectToStore('IP Range',data)
                 }
-                
-                // console.log('ipStart valid')
+
               } 
               else if (key==='ipEnd') {
                 let arrStart = this.state.ipStartValid.split('.')
@@ -160,7 +158,7 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
                       // console.log('ipEnd valid');
                       data.ipEndValid=ipValid;
                       data.ipStartValid=this.state.ipStartValid;
-                      console.log(data);
+                      // console.log(data);
                       if(data.ipStartValid && data.ipEndValid){
                         this.recordConnectToStore('IP Range',data)
                       }
@@ -216,16 +214,7 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
    }))
  }
 
-//  discover=()=>{
-//    if (this.props.content&&this.props.snmpConfig){
-//      let obj={
-//        content:{...this.props.content,snmpConfig:this.props.snmpConfig}
-//      }
-//      let json=JSON.stringify(obj);
-//      console.log(json);
-//     return json
-//    }
-//  }
+
   
     render() {
       const { activeIndex } = this.state
@@ -233,12 +222,11 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
       return (  
     <Segment inverted className={style.mainSegmentWrapper}>
     <Accordion  inverted fluid  className={style.AccordionWrapper}>
-      <Step.Group className = {style.stepGroupWrapper} widths={2} size='tiny'> 
+      <Step.Group className = {style.stepGroupWrapper} widths={2} size='tiny' ordered> 
         <Step background='grey'className = {style.stepWrapper} active={activeIndex === 0} completed={this.props.content.inputType}>
           <Step.Content>
               <Step.Title >
               <Header color='green' as='h3'>Discovery source</Header>
-              <p className={style.stepOrderWrapper}>1</p>
               </Step.Title>
           </Step.Content>
               </Step>
@@ -246,7 +234,6 @@ import DiscoverModal from '../DiscoverModal/DiscoverModal';
               <Step.Content >
           <Step.Title>
           <Header color='green' as='h3'>Discovery options</Header>
-          <p className={style.stepOrderWrapper}>2</p>
           </Step.Title>
         </Step.Content>
       </Step>
